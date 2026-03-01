@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './Components/Navbar'
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Pages/Home';
+import Menu from './Pages/Menu';
+import Contact from './Pages/Contact';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Navbar/>
-     
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   )
 }
 
-export default App
+export default App;
