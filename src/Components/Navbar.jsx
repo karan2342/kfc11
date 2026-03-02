@@ -18,7 +18,7 @@ const Navbar = () => {
 
    
       <ul className="flex items-center gap-8 font-medium text-black">
-        <li>
+        <li >
           <NavLink 
             to="/" 
             className={({ isActive }) => 
@@ -49,10 +49,13 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-
-      <button className="bg-[#ed1909e4] text-[#FAFAFA] px-6 py-2 rounded-full font-bold hover:scale-105 transition">
+       
+       <Link to="/menu">
+      <button className="bg-[#ed1909e4] text-[#FAFAFA] px-6 py-2 rounded-full font-bold cursor-pointer   hover:scale-105 transition ease-in-out duration-300">
+    
         Order Now
       </button>
+      </Link>
     </nav>
   );
 };
