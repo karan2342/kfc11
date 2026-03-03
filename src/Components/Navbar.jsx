@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import images from '../assets/images.js';
+import { FaSearch } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -15,6 +16,15 @@ const Navbar = () => {
           KFC<span className="text-[#D10000]">Pasal</span>
         </span>
       </Link>
+
+    <div className="flex-1 mx-6 max-w-md relative">
+        <FaSearch className="absolute left-5 top-3/10  text-gray-400 " />
+        <input 
+          type="text" 
+          placeholder=" Search menu..." 
+          className="w-full max-w-sm px-9 py-2 rounded-full border border-gray-300 outline-none hover:border-3 focus:border-[#D10000]  "
+        />
+      </div>
 
    
       <ul className="flex items-center gap-8 font-medium text-black">
@@ -49,6 +59,13 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
+
+
+          <div div className='flex flex-row gap-1.5 font-semibold cursor-pointer'>
+            <div  className='hover:text-red-600'>Login</div>
+            <span>/</span>
+            <div className='hover:text-red-600'>Sign Up</div>
+          </div>
        
        <Link to="/menu">
       <button className="bg-[#ed1909e4] text-[#FAFAFA] px-6 py-2 rounded-full font-bold cursor-pointer   hover:scale-105 transition ease-in-out duration-300">
