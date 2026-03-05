@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../assets/images.js'
 import { useNavigate } from 'react-router-dom';
+import { Truck, Utensils, Clock } from 'lucide-react';
 const Home = () => {
   const navigate = useNavigate();
   const menunav = () =>{
@@ -69,11 +70,57 @@ const Home = () => {
            SAVE
       </div>
      </div>
-
-
     </div>
-
       </section>
+
+      <section className="py-20 bg-[#ffffff]">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-black uppercase italic text-gray-900">
+            Why Choose <span className="text-red-600">KFCPasal?</span>
+          </h2>
+          <div className="h-1 w-30 bg-red-600 mx-auto mt-4"></div>
+        </div>
+
+        <div className="grid grid-cols-3  gap-12">
+        {/* Feature 1 */}
+        <div className="flex flex-col items-center text-center p-8 bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:bg-blue-600">
+          <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-white">
+            <Truck className="text-blue-500 w-10 h-10 transition-colors duration-300 group-hover:text-blue-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-blue-500 group-hover:text-white">Fast Delivery</h3>
+          <p className="text-gray-600 p-1 leading-relaxed group-hover:text-blue-50">
+            Craving can't wait. We deliver your favorite chicken hot and fresh in under 30 minutes.
+          </p>
+        </div>
+
+        {/* Feature 2 */}
+        <div className="flex flex-col items-center text-center p-8 bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:bg-green-600">
+          <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-white">
+            <Utensils className="text-green-500 w-10 h-10 transition-colors duration-300 group-hover:text-green-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-green-500 group-hover:text-white">Premium Quality</h3>
+          <p className="text-gray-600 p-1 leading-relaxed group-hover:text-green-50">
+            We use 100% fresh chicken and our secret 11 herbs and spices to give you that legendary taste.
+          </p>
+        </div>
+
+        {/* Feature 3 */}
+        <div className="flex flex-col items-center text-center p-8 bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:bg-yellow-500">
+          <div className="w-20 h-20 bg-yellow-50 rounded-full flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-white">
+            <Clock className="text-yellow-500 w-10 h-10 transition-colors duration-300 group-hover:text-yellow-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-yellow-600 group-hover:text-white">Easy Ordering</h3>
+          <p className="text-gray-600 p-1 leading-relaxed group-hover:text-yellow-50">
+            No more long queues. Browse our menu and order with just a few clicks from your home.
+          </p>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+
     </div>
   );
 };

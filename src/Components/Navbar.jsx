@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import images from '../assets/images.js';
 import { FaSearch } from 'react-icons/fa';
 
+
 const navLinkClasses = ({ isActive }) => 
   `transition-all duration-300 pb-1 border-b-2 ${
     isActive 
