@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import images from '../assets/images.js';
 import { FaSearch } from 'react-icons/fa';
+import { Truck, Utensils, Clock, ShoppingCart } from 'lucide-react';
 
 
 const navLinkClasses = ({ isActive }) => 
@@ -63,13 +64,17 @@ const Navbar = () => {
         <span>/</span>
         <div className='hover:text-red-600'>Sign Up</div>
       </div>
-
-    
-      <Link to="/menu">
+      
+      <div className="relative cursor-pointer p-2 transition-transform group hover:-translate-y-2 ">
+      <ShoppingCart className="w-6 h-6 text-gray-700 group-hover:text-red-500 " />
+    </div>
+      
+      <Link to="">
         <button className="bg-[#ed1909e4] text-[#FAFAFA] px-7 py-2 rounded-full font-bold cursor-pointer hover:scale-105 transition ease-in-out duration-300 ml-4">
           Order Now
         </button>
       </Link>
+      
     </nav>
 
     

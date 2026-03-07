@@ -32,6 +32,8 @@ const Menu = () => {
     : menuItems.filter(item => item.category === selectedCategory);
  
     
+
+    
   return (
     <div className="bg-[#FBF6F6] min-h-screen p-6 md:p-12">
       <div className="max-w-7xl mx-auto">
@@ -78,9 +80,9 @@ const Menu = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-1">{product.name}</h3>
                 <p className="text-[#D10000] font-black text-lg mb-4">Rs. {product.price}</p>
                 
-                <button className="w-full bg-[#E4002B] hover:bg-[#b30022] text-white py-2.5 rounded-lg font-bold transition-colors flex items-center justify-center gap-2">
+                <button className="w-full bg-[#E4002B] hover:bg-[#12a923] text-white py-2.5 rounded-lg font-bold transition-colors flex items-center justify-center gap-2 cursor-pointer">
                   <span>Add to Cart</span>
-                  <FaShoppingCart className="text-[18px]" />
+                  <FaShoppingCart className="text-[18px]  "  />
                 </button>
               </div>
             </div>
