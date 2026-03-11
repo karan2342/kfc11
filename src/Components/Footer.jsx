@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="w-7xl mx-auto flex flex-row justify-between items-center gap-8">
         
      
-        <div className="text-2xl font-bold tracking-tight">
+        <div className="text-2xl font-bold ">
           KFC<span className="text-[#D10000]">Pasal</span>
         </div>
 
@@ -51,3 +51,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

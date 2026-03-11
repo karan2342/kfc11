@@ -9,6 +9,7 @@ const Home = () => {
   };
   return (
     <div className="bg-white ">
+       {/*Hero section */}
       <section className="relative h-[700px] flex items-center bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-60">
            <img 
@@ -18,7 +19,7 @@ const Home = () => {
           />
         </div>
         
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto my-1 px-6 relative">
           <h1 className="text-5xl md:text-7xl font-black uppercase italic">
             Finger Licking' <br />
             <span className="text-red-600">Chicken!</span>
@@ -34,9 +35,9 @@ const Home = () => {
 
       <section className="py-16  mx-auto px-6">
         <h2 className="text-3xl font-bold mb-8 border-l-8 border-red-600 pl-4">Today's Special Offers</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+         
+         {/*Special offer sections*/}
         {/*card 1*/}
           <div className="bg-red-600 rounded-3xl p-8 text-white flex justify-between items-center overflow-hidden">
             <div>
@@ -48,7 +49,7 @@ const Home = () => {
           </div>
           
          {/*card 2*/}
-          <div className="bg-yellow-500 rounded-3xl p-8 text-white flex justify-between items-center">
+          <div className="bg-yellow-500 rounded-3xl p-8 text-white flex justify-between items-center overflow-hidden">
             <div>
               <h3 className="text-2xl font-bold">Free Delivery</h3>
               <p className="mt-2 text-yellow-50).">On orders above Rs. 1500</p>
@@ -73,6 +74,8 @@ const Home = () => {
     </div>
       </section>
 
+
+     {/*why chose us section */}
       <section className="py-20 bg-[#ffffff]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
@@ -82,7 +85,7 @@ const Home = () => {
           <div className="h-1 w-30 bg-red-600 mx-auto mt-4"></div>
         </div>
 
-        <div className="grid grid-cols-3  gap-12">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {/* Feature 1 */}
         <div className="flex flex-col items-center text-center p-8 bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:bg-blue-600">
           <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-white">

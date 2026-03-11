@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#FBF6F6] shadow-md px-5 py-3 flex justify-between items-center sticky top-0 z-50">
       
-    
+     
       <Link to="/" className="flex items-center gap-3">
         <img 
           src={images.kfcLogo} 
@@ -38,17 +38,17 @@ const Navbar = () => {
       </div>
 
 
-     <div className="flex items-center justify-center"> 
+     <div className="flex items-center justify-center gap-6"> 
     <ul className="flex items-center gap-8 font-medium text-black">
     <li>
-      <NavLink to="/" className={navLinkClasses} end>
+      <NavLink to="/" className={navLinkClasses} >
         Home
       </NavLink>
     </li>
     <li>
       <NavLink to="/menu" className={navLinkClasses}>
         Menu
-      </NavLink>
+       </NavLink>
     </li>
     <li>
       <NavLink to="/contact" className={navLinkClasses}>
@@ -59,17 +59,27 @@ const Navbar = () => {
     </div>
 
      
-      <div className='flex flex-row gap-1.5 font-semibold cursor-pointer'>
-        <div className='hover:text-red-600'>Login</div>
-        <span>/</span>
-        <div className='hover:text-red-600'>Sign Up</div>
-      </div>
+      <div className='flex flex-row items-center gap-1.5 font-semibold'>
+      <Link to="">
+        <button className='hover:text-red-600 transition-colors cursor-pointer bg-transparent border-none p-0'>
+          Login
+        </button>
+      </Link>
+      
+      <span className="text-gray-400">/</span>
+      
+      <Link to="">
+        <button className='hover:text-red-600 transition-colors cursor-pointer bg-transparent border-none p-0'>
+          Sign Up
+        </button>
+      </Link>
+    </div>
       
       <div className="relative cursor-pointer p-2 transition-transform group hover:-translate-y-2 ">
       <ShoppingCart className="w-6 h-6 text-gray-700 group-hover:text-red-500 " />
     </div>
       
-      <Link to="">
+      <Link to="/">
         <button className="bg-[#ed1909e4] text-[#FAFAFA] px-7 py-2 rounded-full font-bold cursor-pointer hover:scale-105 transition ease-in-out duration-300 ml-4">
           Order Now
         </button>
